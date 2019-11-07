@@ -33,12 +33,21 @@ projects: []
 ## What would you do?
 
 ```mermaid
-graph TD;
-A[Cbits] -->|Superposition| B(Qbits);
-B -->|Computation| B;
-B -->|Measurement| A;
+graph TD
+A(Cbits) -->|Superposition| B(Qbits)
+B -->|Computation| B
+B -->|Measurement| A
+style A fill:#f9f
+style B fill:#f9f
 ```
 
+```mermaid
+graph LR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
 
 ```mermaid
 sequenceDiagram
